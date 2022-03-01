@@ -20,7 +20,7 @@ struct ContentView: View {
                     Text("This text adaptive color")
                         .foregroundColor(Color("AdaptiveColor"))
                     Text("This text locally color")
-                        .foregroundColor(colorScheme == .light ? .gray : .blue)
+                        .foregroundColor(colorScheme == .light ? .green : .blue)
                 }
             }
             .navigationTitle("Dark Mode")
