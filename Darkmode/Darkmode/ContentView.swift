@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
     var body: some View {
         NavigationView{
             ScrollView{
@@ -18,6 +19,8 @@ struct ContentView: View {
                         .foregroundColor(.secondary)
                     Text("This text adaptive color")
                         .foregroundColor(Color("AdaptiveColor"))
+                    Text("This text locally color")
+                        .foregroundColor(colorScheme == .light ? .gray : .blue)
                 }
             }
             .navigationTitle("Dark Mode")
