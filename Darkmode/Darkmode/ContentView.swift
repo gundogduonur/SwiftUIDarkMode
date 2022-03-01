@@ -16,12 +16,8 @@ struct ContentView: View {
                         .foregroundColor(.primary)
                     Text("Secondary Text")
                         .foregroundColor(.secondary)
-                    Text("Black Text")
-                        .foregroundColor(.black)
-                    Text("White Text")
-                        .foregroundColor(.white)
-                    Text("Blue Text")
-                        .foregroundColor(.blue)
+                    Text("This text adaptive color")
+                        .foregroundColor(Color("AdaptiveColor"))
                 }
             }
             .navigationTitle("Dark Mode")
